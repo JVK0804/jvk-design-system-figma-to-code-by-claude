@@ -112,4 +112,29 @@
   --haptic-return-scale:   scale(1.018);
   --haptic-press-duration: 30ms;
   --haptic-return-duration:280ms;
+
+  /* ── v4: Neural Purple — AI Identity ───── */
+  --color-ai-purple:        #7C3AED;
+  --color-ai-purple-hover:  #6D28D9;
+  --color-ai-purple-mid:    #C4B5FD;
+  --color-ai-purple-light:  #EDE9FE;
+  --color-ai-purple-pale:   #F5F3FF;
+  --color-ai-purple-subtle: rgba(124, 58, 237, 0.10);
+  --color-ai-purple-border: rgba(124, 58, 237, 0.28);
+  --color-ai-purple-shadow: rgba(124, 58, 237, 0.25);
+
+  /* ── v4: Semantic Status ────────────────── */
+  --color-ai-success:  #16A34A;
+  --color-ai-warning:  #D97706;
+  --color-ai-error:    #DC2626;
+
+  /* ── v4: Code Block Surface ─────────────── */
+  --color-code-bg:      #0D1117;
+  --color-code-header:  #161B22;
+  --color-code-text:    #C9D1D9;
+  --color-code-muted:   #484F58;
+  --color-code-border:  #21262D;
+
+  /* ── v4: Streaming Cursor ───────────────── */
+  --streaming-cursor-duration: 0.6s;
 }

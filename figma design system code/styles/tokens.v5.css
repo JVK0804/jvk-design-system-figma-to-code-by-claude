@@ -1,0 +1,123 @@
+/* ============================================
+   Design System v5 — Adaptive (Light × Dark)
+   tokens.v5.css
+   Light: Heritage Cream × Cerulean Teal
+   Dark:  Deep Ink × Teal Volt
+   Switch via [data-theme="dark"] or system pref
+   ============================================ */
+
+/* ── Light Mode (default) ─────────────────── */
+:root,
+[data-theme="light"] {
+  --v5-color-bg:              #F5F2EB;
+  --v5-color-surface:         #FFFFFF;
+  --v5-color-surface-raised:  #FAFAF8;
+
+  --v5-color-primary:         #0E7490;
+  --v5-color-primary-hover:   #22B8CF;
+  --v5-color-primary-subtle:  rgba(14, 116, 144, 0.10);
+  --v5-color-primary-border:  rgba(14, 116, 144, 0.28);
+
+  --v5-color-text:            #1C1A14;
+  --v5-color-text-muted:      #5A5648;
+  --v5-color-text-disabled:   #9A9488;
+
+  --v5-color-nav:             #ECEAE5;
+  --v5-color-border:          #D4CFBF;
+
+  --v5-glass-bg:              rgba(245, 242, 235, 0.45);
+  --v5-glass-specular-from:   rgba(255, 255, 255, 0.32);
+  --v5-glass-specular-to:     rgba(255, 255, 255, 0.06);
+  --v5-glass-glint:           rgba(255, 255, 255, 0.80);
+  --v5-border-glass:          1px solid rgba(255, 255, 255, 0.55);
+  --v5-blur-glass:            blur(12px);
+}
+
+/* ── Dark Mode ────────────────────────────── */
+[data-theme="dark"] {
+  --v5-color-bg:              #1C1A14;
+  --v5-color-surface:         #252118;
+  --v5-color-surface-raised:  #2E2B22;
+
+  --v5-color-primary:         #22B8CF;
+  --v5-color-primary-hover:   #A5F3FC;
+  --v5-color-primary-subtle:  rgba(34, 184, 207, 0.12);
+  --v5-color-primary-border:  rgba(34, 184, 207, 0.28);
+
+  --v5-color-text:            #E8E4D9;
+  --v5-color-text-muted:      #9A9488;
+  --v5-color-text-disabled:   #5A5648;
+
+  --v5-color-nav:             #141210;
+  --v5-color-border:          #2E2B22;
+
+  --v5-glass-bg:              rgba(28, 26, 20, 0.65);
+  --v5-glass-specular-from:   rgba(255, 255, 255, 0.08);
+  --v5-glass-specular-to:     rgba(255, 255, 255, 0.01);
+  --v5-glass-glint:           rgba(255, 255, 255, 0.06);
+  --v5-border-glass:          1px solid rgba(255, 255, 255, 0.10);
+  --v5-blur-glass:            blur(12px);
+}
+
+/* ── System dark preference ───────────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --v5-color-bg:              #1C1A14;
+    --v5-color-surface:         #252118;
+    --v5-color-surface-raised:  #2E2B22;
+    --v5-color-primary:         #22B8CF;
+    --v5-color-primary-hover:   #A5F3FC;
+    --v5-color-primary-subtle:  rgba(34, 184, 207, 0.12);
+    --v5-color-primary-border:  rgba(34, 184, 207, 0.28);
+    --v5-color-text:            #E8E4D9;
+    --v5-color-text-muted:      #9A9488;
+    --v5-color-text-disabled:   #5A5648;
+    --v5-color-nav:             #141210;
+    --v5-color-border:          #2E2B22;
+    --v5-glass-bg:              rgba(28, 26, 20, 0.65);
+    --v5-glass-specular-from:   rgba(255, 255, 255, 0.08);
+    --v5-glass-specular-to:     rgba(255, 255, 255, 0.01);
+    --v5-glass-glint:           rgba(255, 255, 255, 0.06);
+    --v5-border-glass:          1px solid rgba(255, 255, 255, 0.10);
+    --v5-blur-glass:            blur(12px);
+  }
+}
+
+/* ── Shared tokens (theme-agnostic) ──────── */
+:root {
+  --v5-font-display: 'SF Pro Display', system-ui, sans-serif;
+  --v5-font-body:    'SF Pro Text',    system-ui, sans-serif;
+  --v5-font-mono:    'SF Mono', 'JetBrains Mono', monospace;
+
+  --v5-size-display: 80px;
+  --v5-size-h1:      52px;
+  --v5-size-h2:      28px;
+  --v5-size-h3:      20px;
+  --v5-size-body:    16px;
+  --v5-size-caption: 13px;
+  --v5-size-label:   11px;
+
+  --v5-space-1:  4px;
+  --v5-space-2:  8px;
+  --v5-space-3:  12px;
+  --v5-space-4:  16px;
+  --v5-space-6:  24px;
+  --v5-space-8:  32px;
+  --v5-space-12: 48px;
+  --v5-space-20: 80px;
+
+  --v5-radius-sm:   4px;
+  --v5-radius-md:   8px;
+  --v5-radius-lg:   14px;
+  --v5-radius-xl:   20px;
+  --v5-radius-pill: 100px;
+
+  --v5-haptic-press-duration:  30ms;
+  --v5-haptic-return-duration: 280ms;
+
+  /* Breakpoints (reference only — use in JS or @media) */
+  --v5-bp-mobile:  390px;
+  --v5-bp-tablet:  768px;
+  --v5-bp-laptop:  1024px;
+  --v5-bp-desktop: 1440px;
+}

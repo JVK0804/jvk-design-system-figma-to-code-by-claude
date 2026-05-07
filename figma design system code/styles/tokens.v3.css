@@ -1,0 +1,77 @@
+/* ============================================
+   Design System v3 — Deep Ink × Teal Phosphor
+   tokens.v3.css
+   Base: Deep Ink (#1C1A14) dark mode
+   Accent: Teal Phosphor (#A5F3FC) — max brightness on dark
+   ============================================ */
+
+:root {
+
+  /* ── Colour: Base — Deep Ink ───────────── */
+  --v3-color-bg:          #1C1A14;
+  --v3-color-surface:     #252118;
+  --v3-color-surface-raised: #2E2B22;
+
+  /* ── Colour: Accent — Teal Phosphor ────── */
+  --v3-color-primary:         #A5F3FC;
+  --v3-color-primary-dim:     #22B8CF;
+  --v3-color-primary-subtle:  rgba(165, 243, 252, 0.10);
+  --v3-color-primary-border:  rgba(165, 243, 252, 0.24);
+
+  /* ── Colour: Text — Cream on Dark ──────── */
+  --v3-color-text:          #E8E4D9;
+  --v3-color-text-muted:    #9A9488;
+  --v3-color-text-disabled: #5A5648;
+
+  /* ── Glass — Dark Ink base ─────────────── */
+  --v3-glass-bg:            rgba(28, 26, 20, 0.65);
+  --v3-glass-specular-from: rgba(255, 255, 255, 0.08);
+  --v3-glass-specular-to:   rgba(255, 255, 255, 0.01);
+  --v3-glass-glint:         rgba(255, 255, 255, 0.06);
+  --v3-border-glass:        1px solid rgba(255, 255, 255, 0.10);
+  --v3-blur-glass:          blur(12px);
+
+  /* ── CRT Terminal ──────────────────────── */
+  --v3-font-terminal:       'Anonymous Pro', 'JetBrains Mono', monospace;
+  --v3-color-crt-text:      #A5F3FC;
+  --v3-color-crt-dim:       rgba(165, 243, 252, 0.45);
+  --v3-color-crt-bg:        #0A0F0C;
+  --v3-size-terminal:       13px;
+  --v3-tracking-terminal:   0.12em;
+  --v3-leading-terminal:    1.6;
+
+  /* ── Typography ────────────────────────── */
+  --v3-font-display: 'SF Pro Display', system-ui, sans-serif;
+  --v3-font-body:    'SF Pro Text',    system-ui, sans-serif;
+
+  --v3-size-display: 80px;
+  --v3-size-h1:      52px;
+  --v3-size-h2:      28px;
+  --v3-size-h3:      20px;
+  --v3-size-body:    16px;
+  --v3-size-caption: 13px;
+  --v3-size-label:   11px;
+
+  /* ── Spacing ───────────────────────────── */
+  --v3-space-1:  4px;
+  --v3-space-2:  8px;
+  --v3-space-3:  12px;
+  --v3-space-4:  16px;
+  --v3-space-6:  24px;
+  --v3-space-8:  32px;
+  --v3-space-12: 48px;
+  --v3-space-20: 80px;
+
+  /* ── Border Radius ─────────────────────── */
+  --v3-radius-sm:   4px;
+  --v3-radius-md:   8px;
+  --v3-radius-lg:   14px;
+  --v3-radius-xl:   20px;
+  --v3-radius-pill: 100px;
+
+  /* ── Haptic Spring ─────────────────────── */
+  --v3-haptic-press-scale:    scale(0.955);
+  --v3-haptic-return-scale:   scale(1.018);
+  --v3-haptic-press-duration: 30ms;
+  --v3-haptic-return-duration:280ms;
+}
